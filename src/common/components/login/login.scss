@@ -1,0 +1,30 @@
+.login-wrapper {
+    .theme-button-wrapper {
+        top: 10px;
+        right: 10px;
+        .theme-button {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .form-wrapper {
+        padding-bottom: 120px;
+        .login-contents {
+            width: 400px;
+            position: relative;
+        }
+
+        .login-messages {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 15px;
+
+            .p-message-detail {
+                font-size: 15px;
+            }
+        }
+    }
+}
