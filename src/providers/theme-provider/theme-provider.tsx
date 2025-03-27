@@ -6,7 +6,7 @@ export interface ThemeProviderProps {
 }
 
 export const ThemeProvider = (props: ThemeProviderProps) => {
-    const [theme, setTheme] = useLocalStorage('light', 'theme')
+    const [theme, setTheme] = useLocalStorage<'light' | 'dark'>('light', 'theme')
 
     useEffect(() => {
         // If a theme is set, save it to localStorage and apply the theme
@@ -38,7 +38,7 @@ export const ThemeProvider = (props: ThemeProviderProps) => {
 
 export interface _ThemeContext {
     changeTheme: () => void
-    getTheme: () => string
+    getTheme: () => 'light' | 'dark'
 }
 
 const defaultBehavior: _ThemeContext = {
