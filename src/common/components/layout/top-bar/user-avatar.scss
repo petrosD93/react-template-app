@@ -1,0 +1,11 @@
+.user-avatar-wrapper {
+    font-size: 14px;
+    .menu-item {
+        cursor: pointer;
+        padding: 10px 30px 10px 10px;
+        border-radius: var(--border-radius);
+        &:hover {
+            background-color: var(--surface-hover);
+        }
+    }
+}

@@ -77,7 +77,7 @@ export interface ResourceRoleMap {
 }
 
 export interface _PermissionContext {
-    allowed: (resource: string) => boolean
+    allowed: (resource?: string) => boolean
 }
 
 export interface FirebasePermissions {

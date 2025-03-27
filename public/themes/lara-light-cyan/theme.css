@@ -4,6 +4,7 @@
     font-variation-settings: normal;
     --font-family: 'Inter var', sans-serif;
     --font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    --font-size-primary: 15px;
     --surface-a: #ffffff;
     --surface-b: #f9fafb;
     --surface-c: #f3f4f6;
@@ -296,7 +297,7 @@
     .p-component {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         font-weight: normal;
     }
     .p-component-overlay {
@@ -314,7 +315,7 @@
         color: #6b7280;
     }
     .pi {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
     }
     .p-icon {
         width: 1rem;
@@ -323,7 +324,7 @@
     .p-link {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         border-radius: 6px;
     }
     .p-link:focus-visible {
@@ -378,7 +379,7 @@
     .p-autocomplete .p-autocomplete-multiple-container .p-autocomplete-input-token input {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         color: #4b5563;
         padding: 0;
         margin: 0;
@@ -510,7 +511,7 @@
         margin-right: 0.5rem;
     }
     .p-datepicker table {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         margin: 0.5rem 0;
     }
     .p-datepicker table th {
@@ -975,7 +976,7 @@
     .p-chips .p-chips-multiple-container .p-chips-input-token input {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         color: #4b5563;
         padding: 0;
         margin: 0;
@@ -1355,7 +1356,7 @@
     .p-inputtext {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         color: #4b5563;
         background: #ffffff;
         padding: 0.75rem 0.75rem;
@@ -2355,7 +2356,7 @@
         background: #06b6d4;
         border: 1px solid #06b6d4;
         padding: 0.75rem 1.25rem;
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         transition:
             background-color 0.2s,
             color 0.2s,
@@ -7200,7 +7201,7 @@
         color: #ff5757;
     }
     .p-inline-message .p-inline-message-icon {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         margin-right: 0.5rem;
     }
     .p-inline-message .p-inline-message-icon.p-icon {
@@ -7208,7 +7209,7 @@
         height: 1rem;
     }
     .p-inline-message .p-inline-message-text {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
     }
     .p-inline-message.p-inline-message-icon-only .p-inline-message-icon {
         margin-right: 0;
@@ -7287,7 +7288,7 @@
         color: #ff5757;
     }
     .p-message .p-message-text {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         font-weight: 500;
     }
     .p-message .p-message-icon {
@@ -7788,7 +7789,7 @@
     .p-terminal .p-terminal-input {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
     }
     .p-badge {
         background: #06b6d4;

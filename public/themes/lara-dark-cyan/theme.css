@@ -4,6 +4,7 @@
     font-variation-settings: normal;
     --font-family: 'Inter var', sans-serif;
     --font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    --font-size-primary: 15px;
     --surface-a: #1f2937;
     --surface-b: #111827;
     --surface-c: rgba(255, 255, 255, 0.03);
@@ -299,7 +300,7 @@
     .p-component {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         font-weight: normal;
     }
     .p-component-overlay {
@@ -317,7 +318,7 @@
         color: rgba(255, 255, 255, 0.6);
     }
     .pi {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
     }
     .p-icon {
         width: 1rem;
@@ -326,7 +327,7 @@
     .p-link {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         border-radius: 6px;
     }
     .p-link:focus-visible {
@@ -381,7 +382,7 @@
     .p-autocomplete .p-autocomplete-multiple-container .p-autocomplete-input-token input {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         color: rgba(255, 255, 255, 0.87);
         padding: 0;
         margin: 0;
@@ -519,7 +520,7 @@
         margin-right: 0.5rem;
     }
     .p-datepicker table {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         margin: 0.5rem 0;
     }
     .p-datepicker table th {
@@ -987,7 +988,7 @@
     .p-chips .p-chips-multiple-container .p-chips-input-token input {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         color: rgba(255, 255, 255, 0.87);
         padding: 0;
         margin: 0;
@@ -1373,7 +1374,7 @@
     .p-inputtext {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         color: rgba(255, 255, 255, 0.87);
         background: #111827;
         padding: 0.75rem 0.75rem;
@@ -2385,7 +2386,7 @@
         background: #22d3ee;
         border: 1px solid #22d3ee;
         padding: 0.75rem 1.25rem;
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         transition:
             background-color 0.2s,
             color 0.2s,
@@ -7284,7 +7285,7 @@
         color: #fca5a5;
     }
     .p-inline-message .p-inline-message-icon {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         margin-right: 0.5rem;
     }
     .p-inline-message .p-inline-message-icon.p-icon {
@@ -7292,7 +7293,7 @@
         height: 1rem;
     }
     .p-inline-message .p-inline-message-text {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
     }
     .p-inline-message.p-inline-message-icon-only .p-inline-message-icon {
         margin-right: 0;
@@ -7371,7 +7372,7 @@
         color: #fca5a5;
     }
     .p-message .p-message-text {
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
         font-weight: 500;
     }
     .p-message .p-message-icon {
@@ -7738,7 +7739,7 @@
     }
     .p-skeleton {
         background-color: rgba(255, 255, 255, 0.06);
-        border-radius: 6px;
+        /*border-radius: 6px;*/
     }
     .p-skeleton:after {
         background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
@@ -7875,7 +7876,7 @@
     .p-terminal .p-terminal-input {
         font-family: var(--font-family);
         font-feature-settings: var(--font-feature-settings, normal);
-        font-size: 1rem;
+        font-size: var(--font-size-primary);
     }
     .p-badge {
         background: #22d3ee;
