@@ -4,12 +4,12 @@ import { Provider as ReduxProvider } from 'react-redux'
 import { persistor, store } from '../store/store.ts'
 import { PersistGate } from 'redux-persist/integration/react'
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import { Routes } from '../routes.ts'
+import { routes } from '../common/utils/route-utils.tsx'
 
 export interface AppProvidersProps {}
 
 export const AppProviders = () => {
-    const router = createBrowserRouter(Routes)
+    const router = createBrowserRouter(routes)
 
     return (
         <ReduxProvider store={store}>
