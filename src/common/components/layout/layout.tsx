@@ -1,5 +1,7 @@
 import { Outlet } from 'react-router'
 import { TopBar } from './top-bar/top-bar'
+import { Menu } from './menu/menu.tsx'
+import { MenuItems } from '../../utils/menu-utils.ts'
 
 export const Layout = () => {
     return (
@@ -7,9 +9,13 @@ export const Layout = () => {
             <div className="top-bar">
                 <TopBar />
             </div>
-            <div>layout part 1</div>
-            <div>layout part 2</div>
-            <Outlet />
+            <div className="d-flex gap-4">
+                <Menu items={MenuItems()} />
+                <div>
+                    <div>layout part 2</div>
+                    <Outlet />
+                </div>
+            </div>
         </div>
     )
 }

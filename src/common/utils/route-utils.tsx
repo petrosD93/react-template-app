@@ -8,6 +8,8 @@ export type IRoutes = RRouteObject & CRouteObject
 
 interface CRouteObject {
     resource?: string
+    icon?: string
+    label?: string
     children?: IRoutes[]
 }
 
