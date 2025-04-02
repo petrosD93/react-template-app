@@ -13,8 +13,6 @@ export const Menu = (props: MenuProps) => {
     return (
         <div className="menu-wrapper d-flex flex-column gap-1 justify-content-center">
             {props.items.map((i: MenuItem) => {
-                console.log('route:', i.path)
-                console.log(location.pathname)
                 return (
                     <div
                         onClick={() => navigate(i.path)}

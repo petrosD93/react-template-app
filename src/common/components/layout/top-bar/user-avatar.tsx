@@ -22,11 +22,14 @@ export const UserAvatar = () => {
     return (
         <div className="user-avatar-wrapper">
             <Avatar label="V" size="large" onClick={(e) => op.current?.toggle?.(e)} />
-            <OverlayPanel ref={op} appendTo="self">
+            <OverlayPanel ref={op} appendTo="self" style={{ top: '50px' }}>
                 <div className="d-flex flex-column gap-1">
                     <div
                         className="theme-wrapper menu-item d-flex align-items-center gap-3"
-                        onClick={() => theme.changeTheme()}
+                        onClick={() => {
+                            theme.changeTheme()
+                            op.current?.hide?.()
+                        }}
                     >
                         <i className={`pi ${theme.getTheme() === 'light' ? 'pi-moon' : 'pi-sun'}`}></i>
                         <span>{theme.getTheme() === 'light' ? 'Dark Mode' : 'Light Mode'}</span>

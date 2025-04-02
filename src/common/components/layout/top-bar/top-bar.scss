@@ -1,0 +1,18 @@
+.top-bar-wrapper {
+    .menu-handle-wrapper {
+        padding: 1.25rem;
+        border-radius: 35px;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            background: var(--surface-card);
+        }
+        .menu-handle {
+        }
+    }
+}
