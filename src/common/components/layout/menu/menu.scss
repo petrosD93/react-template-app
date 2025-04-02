@@ -1,0 +1,23 @@
+.menu-wrapper {
+    background: var(--surface-card);
+    border: 1px solid var(--surface-border);
+    box-shadow: var(--card-shadow);
+    border-radius: 12px;
+    padding: 1rem;
+    width: 250px;
+    .menu-item {
+        padding: 10px 30px 10px 10px;
+        border-radius: var(--border-radius);
+
+        &:hover {
+            background: var(--surface-hover);
+            cursor: pointer;
+        }
+        &.menu-active {
+            outline: 0 none;
+            outline-offset: 0;
+            transition: box-shadow 0.2s;
+            color: var(--primary-color);
+        }
+    }
+}

@@ -26,7 +26,7 @@ export const LoadingPage = () => {
             <div className="d-flex mt-4 gap-4">
                 <div className="d-flex flex-column gap-4">
                     <Skeleton borderRadius="16px" width="87rem" height="30rem"></Skeleton>
-                    <Skeleton borderRadius="16px" width="87rem" height="18rem"></Skeleton>
+                    {/*<Skeleton borderRadius="16px" width="87rem" height="18rem"></Skeleton>*/}
                 </div>
                 <div className="d-flex flex-column gap-4">
                     <Skeleton borderRadius="16px" width="28rem" height="10rem"></Skeleton>

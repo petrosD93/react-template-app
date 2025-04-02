@@ -36,3 +36,11 @@ body {
 [data-bs-theme='light'] {
     --bs-body-line-height: 1;
 }
+
+.rta-card {
+    background: var(--surface-card);
+    border: 1px solid var(--surface-border);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+}

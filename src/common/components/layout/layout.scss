@@ -1,0 +1,44 @@
+.layout-wrapper {
+    .top-bar {
+        position: fixed;
+        background: var(--surface-ground);
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 1rem 1.5rem 0.5rem;
+    }
+
+    .layout-menu-wrapper {
+        transition:
+            transform 0.2s,
+            left 0.2s;
+        position: fixed;
+        top: 5rem;
+        left: 1rem;
+        &.menu-hidden {
+            transform: translateX(-100%);
+            left: 0;
+        }
+    }
+
+    .main-content-wrapper {
+        transition: margin-left 0.2s;
+        margin-left: 250px;
+        padding: 4rem 0 2rem 1.5rem;
+        min-height: calc(100vh - 20px);
+        width: 100%;
+
+        .main-content-example {
+            background: var(--surface-card);
+            border: 1px solid var(--surface-border);
+            box-shadow: var(--card-shadow);
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        &.menu-hidden {
+            margin-left: 0;
+            padding: 4rem 0 2rem 0;
+        }
+    }
+}
